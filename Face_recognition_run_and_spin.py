@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-# Mostly copied from https://picamera.readthedocs.io/en/release-1.13/recipes2.html
-# Run this script, then point a web browser at http:<this-ip-address>:8000
+# This script was implemented from https://picamera.readthedocs.io/en/release-1.13/recipes2.html and https://github.com/NoBlackBoxes/LastBlackBox/tree/master/course 
+# Run this script, then point a web browser at http://<this-IP-address>:8000/index.html
 # Note: needs simplejpeg to be installed (pip3 install simplejpeg).
 
 import io
