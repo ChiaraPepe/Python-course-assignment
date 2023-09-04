@@ -7,6 +7,11 @@ https://github.com/NoBlackBoxes/LastBlackBox/tree/master/course , https://github
 
 The script is intended to work on the RaspberryPi mounted on our robot, that is serially connected to an Arduino. In my repository, the "Face_recognition_run_and_spin.py" is the script that I remotely run on the RasperryPi of Ambrogio and that smoothly works. For the sake of the assignemen, I also created a jupyter notebook "Face_recognition_run_and_spin_notebook.ipynb" where I documented with extensive comments all the steps of the script (comments you can't have in the .py file), but that of course cannot run without errors in the notebook, because is not talking with its hardware. I will suggest to use my jupyter notebook for correction and feedbacks, and then I will be happy to organize a demonstration running the .py on Ambrogio RasperryPi, to display the output. In the meantime, I uploaded also a .mp4 file as a demonstration :)
 
-
+Brief script description (better documented in the jypyter notebook):
+1) In the first part of the script all the needed libraries for live streaming image and audio processing are downloaded. Then, teh serial port communication between the RaspberryPi and the Arduino is established.
+2) The audio connection to my robot's audio hardware is initialized through PyAudio
+3) The script then activates the camera streaming through a connection between the videocamera of my robot and a web broswer page that will live-straem what the robot camera sees in real-time.
+4) Multiple image processing steps follow, in order to put the image in the right shape to be detected by the face recognition algorithm
+5) A pre-trained face-recognition algorithm outputs the detected face. This is used an an input for the Arduino script to run through serial communication.
 
 
