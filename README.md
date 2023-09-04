@@ -12,6 +12,6 @@ Brief script description (better documented in the jypyter notebook):
 2) The audio connection to my robot's audio hardware is initialized through PyAudio
 3) The camera streaming is activated through a connection between the videocamera of my robot and a web broswer page that will live-straem what the robot camera sees in real-time.
 4) Multiple image processing steps follow, in order to put the image in the right shape to be detected by a face recognition algorithm
-5) A pre-trained face-recognition algorithm outputs the detected face. The output is then sent through the serial communication to the Arduino as input, enabling the execution of the .ino script and the movement of the robot's wheels.
+5) A pre-trained face-recognition algorithm outputs the detected face. The output is then sent through the serial communication to the Arduino as input that enables the execution of the .ino script and the movement of the robot's wheels.
 
 
